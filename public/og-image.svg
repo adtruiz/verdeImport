@@ -1,0 +1,8 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#03110d"/>
+  <circle cx="540" cy="290" r="40" stroke="#4fb08e" stroke-width="3" fill="none"/>
+  <path d="M520 272L540 308L560 272" stroke="#4fb08e" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="600" y="300" font-family="Inter, system-ui, sans-serif" font-weight="600" font-size="48" fill="white" letter-spacing="-1">VERDE</text>
+  <text x="600" y="300" font-family="Inter, system-ui, sans-serif" font-weight="300" font-size="48" fill="white" letter-spacing="-1" dx="170">IMPORT</text>
+  <text x="540" y="380" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="22" fill="#8ad1b7" opacity="0.7">Advanced nanomaterials for US industry</text>
+</svg>
