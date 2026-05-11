@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "whatWeDo": "What We Do",
+    "markets": "Markets",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+    "tag": "Nanomaterials Distribution",
+    "title": "We bring high-purity nanomaterials from proven producers to US industry.",
+    "description": "Graphene nanoplatelets, graphene oxide, reduced graphene oxide — sourced from ISO-certified facilities, independently tested in US labs, delivered with full regulatory compliance.",
+    "cta": "Get in touch",
+    "secondary": "How it works"
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "We handle the hard parts so you don't have to.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Sourcing & vetting",
+        "description": "We work directly with established producers — companies with real facilities, ISO certification, and industrial-scale output. Not university labs. Not brokers reselling from Alibaba."
+      },
+      {
+        "number": "02",
+        "title": "Independent testing",
+        "description": "Every material we distribute gets characterized at US laboratories. Raman spectroscopy, SEM/EDS, XRD, AFM — the full panel. We build the TDS and COA that procurement teams actually trust."
+      },
+      {
+        "number": "03",
+        "title": "Regulatory & logistics",
+        "description": "TSCA compliance, customs classification, SDS documentation, import logistics. We clear the regulatory path so materials move smoothly from origin to your facility."
+      },
+      {
+        "number": "04",
+        "title": "US-based distribution",
+        "description": "Local warehousing, responsive support, consistent supply. We're your stateside partner — not a middleman overseas you can't reach on the phone."
+      }
+    ]
+  },
+  "markets": {
+    "title": "Industries we serve",
+    "subtitle": "Nanomaterials are already in production across these sectors. We supply the materials that make the difference.",
+    "items": [
+      { "name": "Coatings & paints", "detail": "Anti-corrosion, thermal barrier, conductive coatings" },
+      { "name": "Polymers & composites", "detail": "Strength, conductivity, and weight reduction additives" },
+      { "name": "Energy storage", "detail": "Battery anodes, supercapacitors, fuel cell components" },
+      { "name": "Lubricants", "detail": "Friction reduction and thermal management additives" },
+      { "name": "Construction", "detail": "Concrete reinforcement, waterproofing, structural composites" },
+      { "name": "Electronics", "detail": "Conductive inks, thermal interface materials, EMI shielding" }
+    ]
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Whether you need nanomaterial supply for production or you're a producer looking for US market access — reach out. We respond within one business day.",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "interest": "What are you looking for?",
+      "interestOptions": {
+        "purchasing": "Purchasing nanomaterials",
+        "partnership": "Supply partnership",
+        "samples": "Samples for evaluation",
+        "other": "Something else"
+      },
+      "message": "Tell us more...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "sent": "Message sent.",
+      "sentSub": "We'll get back to you within one business day.",
+      "error": "Something went wrong. Try emailing us directly."
+    },
+    "info": {
+      "email": "Email",
+      "emailValue": "info@verdeimport.com",
+      "location": "Based in",
+      "locationValue": "United States",
+      "response": "Response time",
+      "responseValue": "Within 1 business day"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

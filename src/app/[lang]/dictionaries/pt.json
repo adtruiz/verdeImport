@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "whatWeDo": "O Que Fazemos",
+    "markets": "Mercados",
+    "getInTouch": "Fale Conosco"
+  },
+  "hero": {
+    "tag": "Distribuicao de Nanomateriais",
+    "title": "Levamos nanomateriais de alta pureza de produtores comprovados para a industria americana.",
+    "description": "Nanoplaquetas de grafeno, oxido de grafeno, oxido de grafeno reduzido — fornecidos por instalacoes certificadas ISO, testados independentemente em laboratorios dos EUA, entregues com total conformidade regulatoria.",
+    "cta": "Fale conosco",
+    "secondary": "Como funciona"
+  },
+  "howItWorks": {
+    "title": "Como funciona",
+    "subtitle": "Cuidamos das partes dificeis para que voce nao precise.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Fornecimento e verificacao",
+        "description": "Trabalhamos diretamente com produtores estabelecidos — empresas com instalacoes reais, certificacao ISO e producao em escala industrial. Nao laboratorios universitarios. Nao intermediarios revendendo do Alibaba."
+      },
+      {
+        "number": "02",
+        "title": "Testes independentes",
+        "description": "Todo material que distribuimos e caracterizado em laboratorios dos EUA. Espectroscopia Raman, SEM/EDS, XRD, AFM — o painel completo. Construimos o TDS e COA em que equipes de compras realmente confiam."
+      },
+      {
+        "number": "03",
+        "title": "Regulatorio e logistica",
+        "description": "Conformidade TSCA, classificacao aduaneira, documentacao SDS, logistica de importacao. Liberamos o caminho regulatorio para que os materiais cheguem sem problemas a sua instalacao."
+      },
+      {
+        "number": "04",
+        "title": "Distribuicao nos EUA",
+        "description": "Armazenamento local, suporte responsivo, fornecimento consistente. Somos seu parceiro local — nao um intermediario no exterior que voce nao consegue contatar por telefone."
+      }
+    ]
+  },
+  "markets": {
+    "title": "Industrias que atendemos",
+    "subtitle": "Nanomateriais ja estao em producao nesses setores. Fornecemos os materiais que fazem a diferenca.",
+    "items": [
+      { "name": "Tintas e revestimentos", "detail": "Anticorrosao, barreira termica, revestimentos condutivos" },
+      { "name": "Polimeros e compositos", "detail": "Aditivos para resistencia, condutividade e reducao de peso" },
+      { "name": "Armazenamento de energia", "detail": "Anodos de bateria, supercapacitores, componentes de celulas de combustivel" },
+      { "name": "Lubrificantes", "detail": "Aditivos para reducao de atrito e gerenciamento termico" },
+      { "name": "Construcao", "detail": "Reforco de concreto, impermeabilizacao, compositos estruturais" },
+      { "name": "Eletronica", "detail": "Tintas condutivas, materiais de interface termica, blindagem EMI" }
+    ]
+  },
+  "contact": {
+    "title": "Vamos conversar",
+    "subtitle": "Se voce precisa de fornecimento de nanomateriais para producao ou e um produtor buscando acesso ao mercado americano — entre em contato. Respondemos em ate um dia util.",
+    "form": {
+      "name": "Nome",
+      "company": "Empresa",
+      "email": "Email",
+      "interest": "O que voce procura?",
+      "interestOptions": {
+        "purchasing": "Compra de nanomateriais",
+        "partnership": "Parceria de fornecimento",
+        "samples": "Amostras para avaliacao",
+        "other": "Outro"
+      },
+      "message": "Conte-nos mais...",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "sent": "Mensagem enviada.",
+      "sentSub": "Retornaremos em ate um dia util.",
+      "error": "Algo deu errado. Tente nos enviar um email diretamente."
+    },
+    "info": {
+      "email": "Email",
+      "emailValue": "info@verdeimport.com",
+      "location": "Localizacao",
+      "locationValue": "Estados Unidos",
+      "response": "Tempo de resposta",
+      "responseValue": "Ate 1 dia util"
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados."
+  }
+}

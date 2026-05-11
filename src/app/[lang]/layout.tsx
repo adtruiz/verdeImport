@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import { notFound } from "next/navigation";
+import { hasLocale, locales } from "./dictionaries";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Verde Import | Advanced Nanomaterials for US Industry",
@@ -27,13 +29,23 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export async function generateStaticParams() {
+  return locales.map((lang) => ({ lang }));
+}
+
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+
+  if (!hasLocale(lang)) notFound();
+
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang={lang} className="h-full antialiased">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

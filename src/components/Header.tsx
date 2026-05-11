@@ -4,18 +4,30 @@ import { useState } from "react";
 import Link from "next/link";
 import { Logo } from "./Logo";
 
-const navigation = [
-  { name: "What We Do", href: "#what-we-do" },
-  { name: "Markets", href: "#markets" },
-];
+interface HeaderProps {
+  lang: string;
+  nav: {
+    whatWeDo: string;
+    markets: string;
+    getInTouch: string;
+  };
+}
 
-export function Header() {
+export function Header({ lang, nav }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navigation = [
+    { name: nav.whatWeDo, href: "#what-we-do" },
+    { name: nav.markets, href: "#markets" },
+  ];
+
+  const otherLang = lang === "en" ? "pt" : "en";
+  const otherLabel = lang === "en" ? "PT" : "EN";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-charcoal-100">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-verde-900">
+        <Link href={`/${lang}`} className="text-verde-900">
           <Logo className="h-8 w-auto" />
         </Link>
 
@@ -30,11 +42,17 @@ export function Header() {
               {item.name}
             </a>
           ))}
+          <Link
+            href={`/${otherLang}`}
+            className="text-sm font-medium text-charcoal-400 hover:text-charcoal-700 transition-colors"
+          >
+            {otherLabel}
+          </Link>
           <a
             href="#contact"
             className="text-sm font-medium bg-verde-900 text-white px-4 py-2 rounded-md hover:bg-verde-800 transition-colors"
           >
-            Get in Touch
+            {nav.getInTouch}
           </a>
         </div>
 
@@ -67,12 +85,18 @@ export function Header() {
               {item.name}
             </a>
           ))}
+          <Link
+            href={`/${otherLang}`}
+            className="block text-sm font-medium text-charcoal-400"
+          >
+            {otherLabel}
+          </Link>
           <a
             href="#contact"
             onClick={() => setMobileOpen(false)}
             className="block text-sm font-medium bg-verde-900 text-white px-4 py-2 rounded-md text-center"
           >
-            Get in Touch
+            {nav.getInTouch}
           </a>
         </div>
       )}

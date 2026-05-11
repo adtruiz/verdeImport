@@ -2,15 +2,36 @@
 
 import { useState, FormEvent } from "react";
 
-export function ContactForm() {
+interface ContactFormProps {
+  form: {
+    name: string;
+    company: string;
+    email: string;
+    interest: string;
+    interestOptions: {
+      purchasing: string;
+      partnership: string;
+      samples: string;
+      other: string;
+    };
+    message: string;
+    submit: string;
+    sending: string;
+    sent: string;
+    sentSub: string;
+    error: string;
+  };
+}
+
+export function ContactForm({ form }: ContactFormProps) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("sending");
 
-    const form = e.currentTarget;
-    const data = new FormData(form);
+    const formEl = e.currentTarget;
+    const data = new FormData(formEl);
 
     try {
       const res = await fetch("https://formspree.io/f/xkoypbny", {
@@ -21,7 +42,7 @@ export function ContactForm() {
 
       if (res.ok) {
         setStatus("sent");
-        form.reset();
+        formEl.reset();
       } else {
         setStatus("error");
       }
@@ -33,10 +54,8 @@ export function ContactForm() {
   if (status === "sent") {
     return (
       <div className="py-12 text-center">
-        <p className="text-lg font-medium text-charcoal-900">Message sent.</p>
-        <p className="mt-2 text-sm text-charcoal-500">
-          We&apos;ll get back to you within one business day.
-        </p>
+        <p className="text-lg font-medium text-charcoal-900">{form.sent}</p>
+        <p className="mt-2 text-sm text-charcoal-500">{form.sentSub}</p>
       </div>
     );
   }
@@ -48,13 +67,13 @@ export function ContactForm() {
           type="text"
           name="name"
           required
-          placeholder="Name"
+          placeholder={form.name}
           className="w-full px-4 py-3 bg-charcoal-50 border border-charcoal-200 rounded text-charcoal-900 placeholder:text-charcoal-400 text-sm focus:outline-none focus:border-verde-500 transition-colors"
         />
         <input
           type="text"
           name="company"
-          placeholder="Company"
+          placeholder={form.company}
           className="w-full px-4 py-3 bg-charcoal-50 border border-charcoal-200 rounded text-charcoal-900 placeholder:text-charcoal-400 text-sm focus:outline-none focus:border-verde-500 transition-colors"
         />
       </div>
@@ -62,7 +81,7 @@ export function ContactForm() {
         type="email"
         name="email"
         required
-        placeholder="Email"
+        placeholder={form.email}
         className="w-full px-4 py-3 bg-charcoal-50 border border-charcoal-200 rounded text-charcoal-900 placeholder:text-charcoal-400 text-sm focus:outline-none focus:border-verde-500 transition-colors"
       />
       <select
@@ -70,16 +89,16 @@ export function ContactForm() {
         className="w-full px-4 py-3 bg-charcoal-50 border border-charcoal-200 rounded text-charcoal-900 text-sm focus:outline-none focus:border-verde-500 transition-colors"
         defaultValue=""
       >
-        <option value="" disabled>What are you looking for?</option>
-        <option value="purchasing">Purchasing nanomaterials</option>
-        <option value="partnership">Supply partnership</option>
-        <option value="samples">Samples for evaluation</option>
-        <option value="other">Something else</option>
+        <option value="" disabled>{form.interest}</option>
+        <option value="purchasing">{form.interestOptions.purchasing}</option>
+        <option value="partnership">{form.interestOptions.partnership}</option>
+        <option value="samples">{form.interestOptions.samples}</option>
+        <option value="other">{form.interestOptions.other}</option>
       </select>
       <textarea
         name="message"
         rows={4}
-        placeholder="Tell us more..."
+        placeholder={form.message}
         className="w-full px-4 py-3 bg-charcoal-50 border border-charcoal-200 rounded text-charcoal-900 placeholder:text-charcoal-400 text-sm focus:outline-none focus:border-verde-500 transition-colors resize-none"
       />
       <button
@@ -87,10 +106,10 @@ export function ContactForm() {
         disabled={status === "sending"}
         className="px-6 py-3 bg-verde-900 text-white text-sm font-medium rounded hover:bg-verde-800 transition-colors disabled:opacity-50"
       >
-        {status === "sending" ? "Sending..." : "Send message"}
+        {status === "sending" ? form.sending : form.submit}
       </button>
       {status === "error" && (
-        <p className="text-sm text-red-600">Something went wrong. Try emailing us directly.</p>
+        <p className="text-sm text-red-600">{form.error}</p>
       )}
     </form>
   );
