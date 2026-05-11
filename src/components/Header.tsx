@@ -27,16 +27,13 @@ export function Header({ lang, nav }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-charcoal-100">
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="text-verde-900"
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="text-verde-900 cursor-pointer"
         >
-          <Logo className="h-8 w-auto" />
-        </a>
+          <Logo className="h-8 w-auto pointer-events-none" />
+        </button>
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
