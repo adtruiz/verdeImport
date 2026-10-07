@@ -11,18 +11,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Verde Import | Advanced Nanomaterials for US Industry",
     description:
-      "High-purity graphene nanoplatelets, graphene oxide, and reduced graphene oxide — sourced globally, delivered locally.",
+      "High-purity graphene nanoplatelets, graphene oxide, and reduced graphene oxide. Sourced globally, delivered locally.",
     url: "https://verdeimport.com",
     siteName: "Verde Import",
-    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Verde Import | Advanced Nanomaterials for US Industry",
     description:
-      "High-purity graphene nanoplatelets, graphene oxide, and reduced graphene oxide — sourced globally, delivered locally.",
-    images: ["/og-image.svg"],
+      "High-purity graphene nanoplatelets, graphene oxide, and reduced graphene oxide. Sourced globally, delivered locally.",
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.svg",

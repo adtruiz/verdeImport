@@ -157,7 +157,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               <div className="space-y-6 text-sm">
                 <div>
                   <div className="font-medium text-charcoal-900">{dict.contact.info.email}</div>
-                  <div className="text-charcoal-500 mt-1">{dict.contact.info.emailValue}</div>
+                  <a href={`mailto:${dict.contact.info.emailValue}`} className="text-charcoal-500 mt-1 hover:text-verde-600 transition-colors">
+                    {dict.contact.info.emailValue}
+                  </a>
                 </div>
                 <div>
                   <div className="font-medium text-charcoal-900">{dict.contact.info.location}</div>
