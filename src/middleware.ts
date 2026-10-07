@@ -6,14 +6,34 @@ import { match } from "@formatjs/intl-localematcher";
 const locales = ["en", "pt"];
 const defaultLocale = "en";
 
+function isValidLanguageTag(tag: string): boolean {
+  if (!tag || tag === "*") return false;
+  try {
+    Intl.getCanonicalLocales(tag);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function getLocale(request: NextRequest): string {
   const headers: Record<string, string> = {};
   request.headers.forEach((value, key) => {
     headers[key] = value;
   });
 
-  const languages = new Negotiator({ headers }).languages();
-  return match(languages, locales, defaultLocale);
+  try {
+    const negotiatedLanguages = new Negotiator({ headers }).languages();
+    const validLanguages = negotiatedLanguages.filter(isValidLanguageTag);
+
+    if (validLanguages.length === 0) {
+      return defaultLocale;
+    }
+
+    return match(validLanguages, locales, defaultLocale);
+  } catch {
+    return defaultLocale;
+  }
 }
 
 export function middleware(request: NextRequest) {
