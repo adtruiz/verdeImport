@@ -5,78 +5,78 @@
     "getInTouch": "Fale Conosco"
   },
   "hero": {
-    "tag": "Distribuicao de Nanomateriais",
-    "title": "Levamos nanomateriais de alta pureza de produtores comprovados para a industria americana.",
-    "description": "Nanoplaquetas de grafeno, oxido de grafeno, oxido de grafeno reduzido — fornecidos por instalacoes certificadas ISO, testados independentemente em laboratorios dos EUA, entregues com total conformidade regulatoria.",
+    "tag": "Distribuição de Nanomateriais",
+    "title": "Levamos nanomateriais de alta pureza de produtores comprovados para a indústria americana.",
+    "description": "Nanoplaquetas de grafeno, óxido de grafeno e óxido de grafeno reduzido, fornecidos por um parceiro de produção estabelecido, com documentação e dados de qualidade para apoiar sua avaliação.",
     "cta": "Fale conosco",
     "secondary": "Como funciona"
   },
   "howItWorks": {
     "title": "Como funciona",
-    "subtitle": "Cuidamos das partes dificeis para que voce nao precise.",
+    "subtitle": "Cuidamos das partes difíceis para que você não precise.",
     "steps": [
       {
         "number": "01",
-        "title": "Fornecimento e verificacao",
-        "description": "Trabalhamos diretamente com produtores estabelecidos — empresas com instalacoes reais, certificacao ISO e producao em escala industrial. Nao laboratorios universitarios. Nao intermediarios revendendo do Alibaba."
+        "title": "Fornecimento e verificação",
+        "description": "Trabalhamos diretamente com um produtor estabelecido, com instalações reais e produção em escala industrial. Não laboratórios universitários. Não intermediários revendendo do Alibaba."
       },
       {
         "number": "02",
         "title": "Testes independentes",
-        "description": "Todo material que distribuimos e caracterizado em laboratorios dos EUA. Espectroscopia Raman, SEM/EDS, XRD, AFM — o painel completo. Construimos o TDS e COA em que equipes de compras realmente confiam."
+        "description": "Testes laboratoriais independentes dos nossos materiais de lançamento estão em andamento em laboratórios dos EUA. Espectroscopia Raman, SEM/EDS, XRD, AFM: construímos o TDS e COA em que equipes de compras realmente confiam."
       },
       {
         "number": "03",
-        "title": "Regulatorio e logistica",
-        "description": "Conformidade TSCA, classificacao aduaneira, documentacao SDS, logistica de importacao. Liberamos o caminho regulatorio para que os materiais cheguem sem problemas a sua instalacao."
+        "title": "Suporte regulatório",
+        "description": "Trabalhamos com assessoria jurídica regulatória dos EUA em requisitos de TSCA e importação para que você possa avaliar com confiança. Também cuidamos da classificação aduaneira, documentação SDS e logística de importação."
       },
       {
         "number": "04",
-        "title": "Distribuicao nos EUA",
-        "description": "Armazenamento local, suporte responsivo, fornecimento consistente. Somos seu parceiro local — nao um intermediario no exterior que voce nao consegue contatar por telefone."
+        "title": "Suporte nos EUA",
+        "description": "Suporte responsivo nos EUA e entrega coordenada. Somos seu parceiro local, não um intermediário no exterior que você não consegue contatar por telefone."
       }
     ]
   },
   "markets": {
-    "title": "Industrias que atendemos",
-    "subtitle": "Nanomateriais ja estao em producao nesses setores. Fornecemos os materiais que fazem a diferenca.",
+    "title": "Indústrias que atendemos",
+    "subtitle": "Nanomateriais já estão em produção nesses setores. Fornecemos os materiais que fazem a diferença.",
     "items": [
-      { "name": "Tintas e revestimentos", "detail": "Anticorrosao, barreira termica, revestimentos condutivos" },
-      { "name": "Polimeros e compositos", "detail": "Aditivos para resistencia, condutividade e reducao de peso" },
-      { "name": "Armazenamento de energia", "detail": "Anodos de bateria, supercapacitores, componentes de celulas de combustivel" },
-      { "name": "Lubrificantes", "detail": "Aditivos para reducao de atrito e gerenciamento termico" },
-      { "name": "Construcao", "detail": "Reforco de concreto, impermeabilizacao, compositos estruturais" },
-      { "name": "Eletronica", "detail": "Tintas condutivas, materiais de interface termica, blindagem EMI" }
+      { "name": "Tintas e revestimentos", "detail": "Anticorrosão, barreira térmica, revestimentos condutivos" },
+      { "name": "Polímeros e compósitos", "detail": "Aditivos para resistência, condutividade e redução de peso" },
+      { "name": "Armazenamento de energia", "detail": "Ânodos de bateria, supercapacitores, componentes de células de combustível" },
+      { "name": "Lubrificantes", "detail": "Aditivos para redução de atrito e gerenciamento térmico" },
+      { "name": "Construção", "detail": "Reforço de concreto, impermeabilização, compósitos estruturais" },
+      { "name": "Eletrônica", "detail": "Tintas condutivas, materiais de interface térmica, blindagem EMI" }
     ]
   },
   "contact": {
     "title": "Vamos conversar",
-    "subtitle": "Se voce precisa de fornecimento de nanomateriais para producao ou e um produtor buscando acesso ao mercado americano — entre em contato. Respondemos em ate um dia util.",
+    "subtitle": "Se você precisa de fornecimento de nanomateriais para produção ou é um produtor buscando acesso ao mercado americano, entre em contato. Respondemos em até um dia útil.",
     "form": {
       "name": "Nome",
       "company": "Empresa",
       "email": "Email",
-      "interest": "O que voce procura?",
+      "interest": "O que você procura?",
       "interestOptions": {
         "purchasing": "Compra de nanomateriais",
         "partnership": "Parceria de fornecimento",
-        "samples": "Amostras para avaliacao",
+        "samples": "Amostras para avaliação",
         "other": "Outro"
       },
       "message": "Conte-nos mais...",
       "submit": "Enviar mensagem",
       "sending": "Enviando...",
       "sent": "Mensagem enviada.",
-      "sentSub": "Retornaremos em ate um dia util.",
+      "sentSub": "Retornaremos em até um dia útil.",
       "error": "Algo deu errado. Tente nos enviar um email diretamente."
     },
     "info": {
       "email": "Email",
       "emailValue": "info@verdeimport.com",
-      "location": "Localizacao",
-      "locationValue": "Estados Unidos",
+      "location": "Localização",
+      "locationValue": "Salt Lake City, Utah, EUA",
       "response": "Tempo de resposta",
-      "responseValue": "Ate 1 dia util"
+      "responseValue": "Até 1 dia útil"
     }
   },
   "footer": {

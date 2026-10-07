@@ -7,7 +7,7 @@
   "hero": {
     "tag": "Nanomaterials Distribution",
     "title": "We bring high-purity nanomaterials from proven producers to US industry.",
-    "description": "Graphene nanoplatelets, graphene oxide, reduced graphene oxide — sourced from ISO-certified facilities, independently tested in US labs, delivered with full regulatory compliance.",
+    "description": "Graphene nanoplatelets, graphene oxide, and reduced graphene oxide, sourced from an established production partner, with documentation and quality data to support your evaluation.",
     "cta": "Get in touch",
     "secondary": "How it works"
   },
@@ -18,22 +18,22 @@
       {
         "number": "01",
         "title": "Sourcing & vetting",
-        "description": "We work directly with established producers — companies with real facilities, ISO certification, and industrial-scale output. Not university labs. Not brokers reselling from Alibaba."
+        "description": "We work directly with an established producer with real facilities and industrial-scale output. Not university labs. Not brokers reselling from Alibaba."
       },
       {
         "number": "02",
         "title": "Independent testing",
-        "description": "Every material we distribute gets characterized at US laboratories. Raman spectroscopy, SEM/EDS, XRD, AFM — the full panel. We build the TDS and COA that procurement teams actually trust."
+        "description": "Independent lab testing of our launch materials is underway at US laboratories. Raman spectroscopy, SEM/EDS, XRD, AFM: we build the TDS and COA that procurement teams actually trust."
       },
       {
         "number": "03",
-        "title": "Regulatory & logistics",
-        "description": "TSCA compliance, customs classification, SDS documentation, import logistics. We clear the regulatory path so materials move smoothly from origin to your facility."
+        "title": "Regulatory support",
+        "description": "We work with U.S. regulatory counsel on TSCA and import requirements so you can evaluate with confidence. We also handle customs classification, SDS documentation, and import logistics."
       },
       {
         "number": "04",
-        "title": "US-based distribution",
-        "description": "Local warehousing, responsive support, consistent supply. We're your stateside partner — not a middleman overseas you can't reach on the phone."
+        "title": "U.S.-based support",
+        "description": "Responsive U.S. support and coordinated delivery. We're your stateside partner, not a middleman overseas you can't reach on the phone."
       }
     ]
   },
@@ -51,7 +51,7 @@
   },
   "contact": {
     "title": "Let's talk",
-    "subtitle": "Whether you need nanomaterial supply for production or you're a producer looking for US market access — reach out. We respond within one business day.",
+    "subtitle": "Whether you need nanomaterial supply for production or you're a producer looking for US market access, reach out. We respond within one business day.",
     "form": {
       "name": "Name",
       "company": "Company",
@@ -74,7 +74,7 @@
       "email": "Email",
       "emailValue": "info@verdeimport.com",
       "location": "Based in",
-      "locationValue": "United States",
+      "locationValue": "Salt Lake City, Utah",
       "response": "Response time",
       "responseValue": "Within 1 business day"
     }
